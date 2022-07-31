@@ -1,5 +1,4 @@
 FROM tomcat:latest
 LABEL maintainer="Leela"
-RUN apt-get update
-COPY **/*.war tomcat/webapps
+COPY target/*.war usr/local/tomcat/webapps
 EXPOSE 80
